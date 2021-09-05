@@ -62,3 +62,23 @@ li {
 .mr-10 {
    margin-right: 10%;
 }
+
+
+.font-weight-600 {
+   font-weight: 600;
+}
+.font-weight-700 {
+   font-weight: 700;
+}
+
+
+.text-center {
+   text-align: center;
+}
+
+
+
+.round-10px {
+   border-radius: 10px;
+   
+}

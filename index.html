@@ -5,13 +5,270 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <link rel="stylesheet" href="css/breaker.min.css">
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+   <link rel="manifest" href="icon/site.webmanifest">
+   <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
+   <link rel="shortcut icon" href="icon/favicon.ico">
+   <meta name="msapplication-TileColor" content="#da532c">
+   <meta name="msapplication-config" content="icon/browserconfig.xml">
+   <meta name="theme-color" content="#ffffff">
 
-   <title> Lexographics </title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <link rel="stylesheet" href="css/breaker.min.css">
+   <link rel="stylesheet" href="css/style.min.css">
+
+   <title> Lexographics | Software / 3D Art </title>
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HVKGY9SWPT"></script>
+   <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'G-HVKGY9SWPT');
+   </script>
 </head>
 <body>
+   <canvas class="bg-canvas" id="bg-canvas"></canvas>
+
+   <a id="home"></a>
+
+
+   <nav class="navbar">
+      <ul class="responsive-container">
+         <li class="container-item responsive-navbar-item">
+            <a href="https://zbamgames.itch.io" class="btn bg-transparent font-weight-700"> Zbam Games </a>
+         </li>
+         
+         <li class="container-item responsive-navbar-item">
+            <a href="#home"     class="btn bg-transparent font-weight-600"> Home </a>
+         </li>
+
+         <li class="container-item responsive-navbar-item">
+            <a href="#products" class="btn bg-transparent font-weight-600"> My Products </a>
+         </li>
+
+         <li class="container-item responsive-navbar-item">
+            <a href="#contact"  class="btn bg-transparent font-weight-600"> Contact </a>
+         </li>
+
+      </ul>
+   </nav>
+
+   <h1 style="margin: 10vh 10%; ">
+      <strong> I am Lexographics </strong>
+      <br><hr>
+      <small> Programmer <br> Game Developer <br> 3D artist </small>
+   </h1>
+
+
+
+   <section id="products">
+      <h2 style="text-align: center; padding-top: 3%; padding-bottom: 3%; background-color: #FFFFFF33;">
+         <i class="fas fa-code"></i>
+            My Products
+         <i class="fas fa-code"></i>
+      </h2>
+
    
-   <script src="src/index.js"></script>
+   
+
+   <h2 class="text-center"> Games </h2>
+   <hr>
+   <div class="panel-container" id="product-container-games">
+
+      <div class="product panel-item">
+         <!-- <img src="img/image.png" alt="image alt" style="height: 100%; width: 94%; margin-left: 3%; border-radius: 5px;"> -->
+         <div style="height: 100%; width: 94%; margin-left: 3%; background-image: url('img/aim-polygon-banner.png'); border-radius: 5px; background-position: center;"></div>
+         <h2 class="hover-reveal-text glow-text" style="text-align: center; margin: 2% 0%; padding-top: 2%; padding-bottom: 2%; transform: translateY(-300px);">
+            Aim Polygon
+         </h2>
+         <p style="height: 50%; transform: translateY(-300px);   padding-left: 7%; padding-right: 3%; -webkit-box-decoration-break: clone; box-decoration-break: clone;" class="hover-reveal-text">
+            <br> Improve your aiming skills in FPS games!
+         </p>
+         <div class="container">
+            <a href="https://zbamgames.itch.io/aim-polygon" class="btn container-item round-10px" style="transform: translateY(-300px); font-weight: 600; width: 60%;">
+               Play On itch.io
+            </a>
+         </div>
+      </div>
+
+      <div class="product panel-item">
+         <div style="height: 100%; width: 94%; margin-left: 3%; background-image: url('img/target-moon-banner.png'); border-radius: 5px; background-position: center;"></div>
+         <h2 class="hover-reveal-text glow-text" style="text-align: center; margin: 2% 0%; padding-top: 2%; padding-bottom: 2%; transform: translateY(-300px);">
+            Target Moon
+         </h2>
+         <p style="height: 50%; transform: translateY(-300px);   padding-left: 7%; padding-right: 3%; -webkit-box-decoration-break: clone; box-decoration-break: clone;" class="hover-reveal-text">
+            <br> A lost astronaut in the space trying to reach the earth. Made in 48 hours for Miz Jam 1
+         </p>
+         <div class="container">
+            <a href="https://zbamgames.itch.io/target-moon" class="btn container-item round-10px" style="transform: translateY(-300px); font-weight: 600; width: 60%;">
+               Play On itch.io
+            </a>
+         </div>
+      </div>
+
+      <div class="product panel-item">
+         <div style="height: 100%; width: 94%; margin-left: 3%; background-image: url('img/not-spooky-at-all-banner.png'); border-radius: 5px; background-position: center; background-repeat: no-repeat;"></div>
+         <h2 class="hover-reveal-text glow-text" style="text-align: center; margin: 2% 0%; padding-top: 2%; padding-bottom: 2%; transform: translateY(-300px);">
+            Not Spooky At All
+         </h2>
+         <p style="height: 50%; transform: translateY(-300px);   padding-left: 7%; padding-right: 3%; -webkit-box-decoration-break: clone; box-decoration-break: clone;" class="hover-reveal-text">
+            <br> Halloween Special. Made in 48 hours for Spooky 2D Jam
+         </p>
+         <div class="container">
+            <a href="https://zbamgames.itch.io/not-spooky-at-all" class="btn container-item round-10px" style="transform: translateY(-300px); font-weight: 600; width: 60%;">
+               Play On itch.io
+            </a>
+         </div>
+      </div>
+
+      <div class="product panel-item">
+         <div style="height: 100%; width: 94%; margin-left: 3%; background-image: url('img/tower-of-power-banner.png'); border-radius: 5px; background-position: center;"></div>
+         <h2 class="hover-reveal-text glow-text" style="text-align: center; margin: 2% 0%; padding-top: 2%; padding-bottom: 2%; transform: translateY(-300px);">
+            Tower Of Power
+         </h2>
+         <p style="height: 50%; transform: translateY(-300px);   padding-left: 7%; padding-right: 3%; -webkit-box-decoration-break: clone; box-decoration-break: clone;" class="hover-reveal-text">
+            <br> Escape from forces behind you. To get out of the cage, you must deactivate towers and destroy the spawner. Made in 72 hours for Mini Jam 60
+         </p>
+         <div class="container">
+            <a href="https://zbamgames.itch.io/tower-of-power" class="btn container-item round-10px" style="transform: translateY(-300px); font-weight: 600; width: 60%;">
+               Play On itch.io
+            </a>
+         </div>
+      </div>
+
+      <div class="product panel-item">
+         <div style="height: 100%; width: 94%; margin-left: 3%; background-image: url('img/teleporter-banner.png'); border-radius: 5px; background-position: center;"></div>
+         <h2 class="hover-reveal-text glow-text" style="text-align: center; margin: 2% 0%; padding-top: 2%; padding-bottom: 2%; transform: translateY(-300px);">
+            Teleporter
+         </h2>
+         <p style="height: 50%; transform: translateY(-300px);   padding-left: 7%; padding-right: 3%; -webkit-box-decoration-break: clone; box-decoration-break: clone;" class="hover-reveal-text">
+            <br> A small creature that can travel across dimensions is trying to get out. Made in 7 days for Vim Jam: Collectables (8 Bits to Infinity)
+         </p>
+         <div class="container">
+            <a href="https://zbamgames.itch.io/teleporter" class="btn container-item round-10px" style="transform: translateY(-300px); font-weight: 600; width: 60%;">
+               Play On itch.io
+            </a>
+         </div>
+      </div>
+
+      <div class="product panel-item">
+         <div style="height: 100%; width: 94%; margin-left: 3%; background-image: url('img/seniorb-banner.png'); border-radius: 5px; background-position: center;"></div>
+         <h2 class="hover-reveal-text glow-text" style="text-align: center; margin: 2% 0%; padding-top: 2%; padding-bottom: 2%; transform: translateY(-300px);">
+            Seniorb
+         </h2>
+         <p style="height: 50%; transform: translateY(-300px);   padding-left: 7%; padding-right: 3%; -webkit-box-decoration-break: clone; box-decoration-break: clone;" class="hover-reveal-text">
+            <br> Floating orb in the space running trough obstacles. My second published game.
+         </p>
+         <div class="container">
+            <a href="https://zbamgames.itch.io/seniorb" class="btn container-item round-10px" style="transform: translateY(-300px); font-weight: 600; width: 60%;">
+               Play On itch.io
+            </a>
+         </div>
+      </div>
+   
+   </div>
+
+   <h2 class="text-center"> 3D Art </h2>
+   <hr>
+   <div class="panel-container" id="product-container-games">
+
+      <div class="product panel-item product-outline">
+         <div style="height: 100%; width: 94%; margin-left: 3%; background-image: url('img/low-poly-race-car-banner.png'); border-radius: 5px; background-position: center;"></div>
+         <h2 class="hover-reveal-text glow-text" style="text-align: center; margin: 2% 0%; padding-top: 2%; padding-bottom: 2%; transform: translateY(-300px);">
+            Low Poly Race Car Models
+         </h2>
+         <p style="height: 50%; transform: translateY(-300px);   padding-left: 7%; padding-right: 3%; -webkit-box-decoration-break: clone; box-decoration-break: clone;" class="hover-reveal-text">
+            <br> Low poly & Game Ready asset available on itch.io
+         </p>
+         <div class="container">
+            <a href="https://zbamgames.itch.io/low-poly-supra" class="btn container-item round-10px" style="transform: translateY(-300px); font-weight: 600; width: 60%;">
+               Download On itch.io
+            </a>
+         </div>
+      </div>
+   
+   </div>
+
+   </section>
+   
+
+
+   <section id="contact" style="margin-top: 5%;">
+
+      <h2 style="text-align: center;  padding-top: 2%; padding-bottom: 2%; background-color: #FFFFFF33;"> Contact </h2>   
+      
+      <h3 style="text-align: center;" id="contact-mobile">
+         You can contact me on:
+         <br><br>
+         Github
+         <br>
+         <a href="https://github.com/Lexographics" style="text-decoration: none;">
+            <i class="fab fa-github black-hover-white" style="text-align: center; font-size: 3rem;"></i>
+         </a>
+
+         <br><br>
+         itch.io
+         <br>
+         <a href="https://zbamgames.itch.io">
+            <i class="fab fa-itch-io black-hover-white" style="text-align: center; font-size: 3rem;"></i>
+         </a>
+      </h3>
+
+      <h3 style="text-align: center;" id="contact-desktop">
+         You can contact me on:
+         <br><br>
+         Github &nbsp; itch.io
+         <br>
+         <a href="https://github.com/Lexographics" style="text-decoration: none;">
+            <i class="fab fa-github black-hover-white" style="text-align: center; font-size: 3rem;"></i>
+         </a>
+
+         &nbsp;&nbsp;
+
+         <a href="https://zbamgames.itch.io">
+            <i class="fab fa-itch-io black-hover-white" style="text-align: center; font-size: 3rem;"></i>
+         </a>
+         
+      </h3>
+
+   </section>
+
+
+
+   <footer class="footer">
+      <ul class="responsive-container">
+         <li class="container-item responsive-navbar-item"> <a href="#home"     class="btn bg-transparent" style="font-weight: 600;"> Home     </a> </li>
+         <li class="container-item responsive-navbar-item"> <a href="#products" class="btn bg-transparent" style="font-weight: 600;"> Products </a> </li>
+         <li class="container-item responsive-navbar-item"> <a href="#contact"  class="btn bg-transparent" style="font-weight: 600;"> Contact  </a> </li>
+         
+
+         <!--To Make next li pushed to right-->
+         <li style="width: 40%;"></li>
+
+         <li> 
+            <span style="border: none;
+                           color: white;
+                           padding: 15px 32px;
+                           text-align: center;
+                           text-decoration: none;
+                           font-size: 16px;
+                           display: block;
+                           
+
+                           ">
+               Lexographics 2021
+            </span>
+         </li>
+         
+      </ul>
+   </footer>
+
 </body>
 </html>
