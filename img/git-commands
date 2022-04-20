@@ -1,0 +1,73 @@
+git version
+
+
+git init
+
+git clone https://github.com/octocat/octocat
+git clone ssh://git@github.com/[username]/[repo-name].git
+
+
+git status
+
+
+git branch         # shows branches
+git branch -a      # show all branches (local and remote)
+git branch branch-name    # create new branch
+git branch -d branch-name # delete a local branch
+git branch -D branch-name # delete local branch forced, even if branch is not pushed or merged yet
+
+
+git checkout main  # sets branch to main
+git checkout -b new-branch # creates and sets new branch
+ 
+
+git add file.cpp file.hpp
+git add .
+git add -A
+
+git rm -r file.cpp   # -r -> recursive
+
+
+git commit -m "Commit message"
+git commit       # A text editor will open to get commit message
+
+
+git log
+git log --oneline
+
+
+git revert [commit-hash]
+git revert HEAD~1
+git revert HEAD
+# difference between ~ and ^
+
+
+git push -u origin main
+git push origin --delete branch-name   # delete remote branch
+git push origin :branch-name           # delete remote branch
+
+
+git fetch --prune
+git fetch -p
+# git fetch -> combination of git fetch and git merge which means that, when we use git pull, it gets the updates from remote repository (git fetch) and immediately applies the latest changes in your local (git merge)
+
+
+git checkout
+git pull   # update local repo to newest commit
+git pull origin main
+
+
+git merge branch-name   # Merges branch into active branch
+git merge source-branch target-branch
+
+
+
+git remote add origin ssh://git@github.com/[username]/[repository-name].git
+git remote set-url origin ssh://git@github.com/[username]/[repository-name].git
+
+
+
+git config --global --list
+git config --global user.name "your_username"
+git config --global user.email "your_email_address@example.com"
+
